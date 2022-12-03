@@ -55,6 +55,20 @@
 (5). java -jar build/libs/milliage-0.0.1-SNAPSHOT.jar
 ```
 
+</br>
+
+## 📌 DB ERD & 구현 Schema
+
+![image](https://user-images.githubusercontent.com/81614803/205431555-0cbb47ee-e92b-4ebb-ad3f-8f88328d31cf.png)
+
+
+</br>
+
+## 📌 테스트 코드
+- Mockmvc, BDDMockito, JUnit을 통한 계층별 단위테스트
+
+![image](https://user-images.githubusercontent.com/81614803/205431231-3a36867a-4d5f-46c5-88ca-3b6dd43e9021.png)
+
   
 </br>
 
