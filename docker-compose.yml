@@ -1,0 +1,21 @@
+#version: '3.8'
+#
+#volumes:
+#  mysql_data:
+#
+#services:
+#  db:
+#    image: mysql/mysql-server:latest
+#    platform: linux/amd64
+#    environment:
+#      - MYSQL_DATABASE=testdb
+#      - MYSQL_ROOT_PASSWORD=testpass
+#      - MYSQL_USER=testuser
+#      - MYSQL_PASSWORD=testpass
+#    ports:
+#      - '3306:3306'
+#    volumes:
+#      - mysql_data:/var/lib/mysql
+
+
+# 기존 mysql 사용시 해당 포트를 꺼줘야 하기때문에, 기존 mysql 로컬 db에 생성하여 사용하도록 변경
