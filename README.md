@@ -26,17 +26,35 @@
 
 ## 📌 실행방법
 
-1. H2 인메모리 DB이용
+### 1. H2 인메모리 DB이용
 ```java
-
+(1). build.gradle 에서 runtimeOnly 'com.h2database:h2' 활성화 및 아래 mysql 비활성화
+```
+![image](https://user-images.githubusercontent.com/81614803/205430717-5b1882c9-14c3-43a4-a5b7-f42a2315a322.png)
+```java
+(2). ./gradlew build 로 프로젝트 빌드
+(3). java -jar build/libs/milliage-0.0.1-SNAPSHOT.jar --spring.profiles.active=local 실행
 ```
 
 </br>
 
-2. Mysql 사용
-```java
+---
 
+### 2. Mysql 사용
+```java
+(1). build.gradle 에서 runtimeOnly 'mysql:mysql-connector-java' 활성화 및 위 h2 비활성화
 ```
+![image](https://user-images.githubusercontent.com/81614803/205430820-7b3392a0-500b-4224-9077-5dc7794fc705.png)
+```java
+(2). mysql에서 사용할 db를 생성하고 생성 후,
+(3). application.yml 파일에서 생성한 데이터베이스 아래사진의 1번에, mysql 유저이름을 2번에, 비밀번호를 3번에 입력
+```
+![image](https://user-images.githubusercontent.com/81614803/205430988-3b1f5979-71f0-4330-9472-07830be99c5c.png)
+```java
+(4). ./gradlew build 로 프로젝트 빌드
+(5). java -jar build/libs/milliage-0.0.1-SNAPSHOT.jar
+```
+
   
 </br>
 
