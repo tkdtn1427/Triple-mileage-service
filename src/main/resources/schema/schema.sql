@@ -41,3 +41,12 @@ create table review (
     user_id Binary(16),
     primary key (review_id)
 ) engine=InnoDB;
+
+alter table review
+    add unique review_userToplace (user_id, place_id);
+
+alter table review
+    add index review_place (place_id);
+
+alter table point
+    add index point_userId (user_id);
