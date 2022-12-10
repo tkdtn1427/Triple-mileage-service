@@ -21,7 +21,7 @@ public class PointController {
     }
 
     @GetMapping
-    public ResponseEntity getUserPointHistory(@PageableDefault(sort = "CREATED_AT", direction = Sort.Direction.DESC) Pageable pageable,
+    public ResponseEntity getUserPointHistory(@PageableDefault(sort = "createdAt", direction = Sort.Direction.DESC) Pageable pageable,
                                               @RequestParam UUID userId){
         return pointService.getPointHistory(pageable,userId);
     }

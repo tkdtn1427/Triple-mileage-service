@@ -7,12 +7,12 @@ import trip.milliage.common.Auditable;
 import javax.persistence.*;
 import java.util.UUID;
 
+@Builder
 @Entity
 @Setter
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 public class Point extends Auditable {
     @Id
     @Column(columnDefinition = "Binary(16)")
