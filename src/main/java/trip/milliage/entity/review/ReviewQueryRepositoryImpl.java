@@ -16,6 +16,6 @@ public class ReviewQueryRepositoryImpl implements ReviewQueryRepository{
         return Optional.ofNullable(jpaQueryFactory.select(review)
                 .from(review)
                 .where(review.placeId.eq(placeId))
-                .fetchOne());
+                .fetchFirst());
     }
 }
