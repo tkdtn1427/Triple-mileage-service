@@ -12,6 +12,8 @@ import java.util.*;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+//@Table(indexes = {@Index(name = "review_place", columnList = "placeId"),
+//@Index(name = "review_userToPlace", columnList = "userId, placeId", unique = true)})
 public class Review extends Auditable {
     @Id
     @Column(columnDefinition = "Binary(16)")
